@@ -1,0 +1,70 @@
+body{
+    background-color: #85BE66;
+    background-size: cover;
+    background-position: center;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 150%;
+    margin: 2% auto;
+}
+img{
+    display: block;
+    margin: 0 auto 2% auto;
+}
+div{
+    text-align: center;
+    font-size: 110%;
+    font-family: "Poppins", sans-serif;
+}
+hr{
+    border: none;
+    background-color: black;
+    height: 1px;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+#home{
+    width: 2.5%;
+    position: fixed;
+    left: 2.5%;
+    float: left;
+}
+#home:hover{
+    transform: translateY(-5px);
+    transition: 300ms;
+}
+#home:not(:hover){
+    transition: 300ms;
+}
+#alt{
+    position: fixed;
+    right: 2.5%;
+    float: right;
+    top: 4%;
+    background: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 110%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+#alt:hover{
+    color: rgba(0, 0, 0, 0.414);
+    transform: translateY(-5px);
+}
+#alt:not(:hover){
+    transition: 300ms;
+}
+ul{
+    display: inline-block;
+    line-height: 200%;
+}
+ol{
+    text-align: left;
+    line-height: 220%;
+    margin-top: 0;
+}

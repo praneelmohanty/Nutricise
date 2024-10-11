@@ -1,0 +1,48 @@
+body{
+    background-color: #85BE66;
+    background-size: cover;
+    background-position: center;
+}
+#welcome{
+    text-align: center;
+    width: 50%;
+    background: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 200%;
+    color: #000000;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+    margin: 15% auto 0 auto;
+    padding: 4% 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10% auto;
+}
+a{
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+    border-radius: 50px;;
+    font-size: 80%;
+}
+a:hover{
+    color: rgba(0, 0, 0, 0.414);
+}
+#diet{
+    padding: 15px 25px;
+}
+#workout{
+    padding: 15px 25px;
+}
+#center{
+    display: grid;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/Poppins/Poppins-Regular.ttf) format('truetype');
+}

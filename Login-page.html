@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Nutricise</title>
+    <link rel="stylesheet" href="CSS/Login-page.css">
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="Javascript/Login-page.js"></script>
+</head>
+<body>
+    <div id="logo-div">
+        <a href="Home-page.html" style="width: fit-content;"><img src="Images/Logo-black.png"></a>
+    </div>
+    <div class="form-box">
+        <form action="">
+            <h2>Login Here</h2>
+            <div class="use-pass">
+                <input type="text" placeholder="Username"
+                required>
+                <i class='bx bx-user-circle'></i>
+            </div>
+            <div class="use-pass">
+                <input type="password" placeholder="Password"
+                required id="myInput" autocomplete="current-password" 
+                maxlength="20"
+                pattern="(?!000)([0-6]\d{2}|7([0-6]\d|7[012]))([ -])?(?!00)\d\d\3(?!0000)\d{4}"
+                title="Enter a password within 20 characters">
+                <span class="eye" onclick="myFunction()">
+                    <i id="hide1" class='bx bx-show-alt'></i>
+                    <i id="hide2" class='bx bx-hide'></i>
+                </span>
+            </div>
+            <!-- <div class="remember-forgot">
+                <label style="cursor: pointer;">
+                    <input type="checkbox" style="cursor: pointer;"> Remember me
+                </label> 
+                <a href="#" target="_blank">Forgot Password?</a>
+            </div> -->
+            <button type="submit" class="btn" >LOGIN</button>
+            <div class="register-link">
+                <p>
+                    Don't have an account?
+                    &emsp;<a href="Sign-up-page.html">Register</a>
+                </p>
+            </div>
+        </form>
+    </div> 
+</body>
+</main>
+</html>

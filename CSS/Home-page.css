@@ -1,0 +1,66 @@
+body{
+    background-color: #85BE66;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: white;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+ul{
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#login{
+    margin-right: 20%;
+}
+#signup{
+    margin-right: 5%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease-out;
+}
+a:hover{
+    color: rgba(0, 0, 0, 0.414);
+}
+#logo{
+    margin-right: 35%;
+    width: 40px;
+}
+li{
+    margin-top: 10px;
+}
+#big{
+    margin: 20px 0;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+}
+p{
+    font-family: "Averia Libre", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px 30px;
+}
+#logo-div{
+    position: relative;
+    text-align: center;
+    display: inline-flex;
+    width: 50%;
+}
+#back{
+    width: 100%;
+    display: grid;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/Poppins/Poppins-Regular.ttf) format('truetype');
+}

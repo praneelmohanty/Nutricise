@@ -1,0 +1,47 @@
+body{
+    background-color: #85BE66;
+    background-size: cover;
+    background-position: center;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+p{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 150%;
+    margin: 2% auto;
+}
+div{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+}
+ul{
+    display: inline-block;
+    text-align: left;
+    line-height: 210%;
+}
+.list{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-out;
+}
+.list:hover{
+    color: rgba(0, 0, 0, 0.414);
+    transform: translateY(-5px);
+}
+#home{
+    width: 2.5%;
+    position: fixed;
+    left: 3%;
+    float: left;
+}
+#home:hover{
+    transform: translateY(-5px);
+    transition: 300ms;
+}
+#home:not(:hover){
+    transition: 300ms;
+}
