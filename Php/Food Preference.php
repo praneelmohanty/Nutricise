@@ -19,7 +19,6 @@ $stmt->bind_param("ss", $food_preference, $username);
 
 
 if ($stmt->execute()) {
-    echo "BMI updated successfully.";
     header("Location: ../HTML/Workout Days.html");
     exit();
 } else {

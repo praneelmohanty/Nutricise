@@ -20,7 +20,6 @@ $stmt->bind_param("ddds", $weight, $height, $bmi, $username);
 
 
 if ($stmt->execute()) {
-    echo "BMI updated successfully.";
     header("Location: ../HTML/Food Preference.html");
     exit();
 } else {
