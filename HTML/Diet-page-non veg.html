@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diet</title>
+    <link rel="stylesheet" href="../CSS/Diet-page.css" />
+    <link rel="icon" type="img/x-icon" href="../Images/Logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <nav>
+    <ul id="nav">
+      <li>
+        <a href="BMI.html" class="a1">New Schedule</a>
+      </li>
+      <li>
+        <a href="Diet-page-non veg.html" id="a">Diet</a>
+      </li>
+      <li>
+        <a href="../Php/Current-workout.php" class="a1">Workout</a>
+      </li>
+      <li>
+        <a href="../Php/Logout.php" class="a1">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <body>
+    <a href="Credentials.html">
+      <img
+        id="home"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAABV1JREFUaEPNmluodVMUx3/Lg5Iicsv9Ep8o13IrUt8THlxCeHFJX7nkAQ9K8X08yINbHnxe8ESSULxQQilyDZG7XOJBooQHbGuctc7ea6811xz/uebcJ7P2aZ9zxvyP/3+OMce8rFVRrFXAjOZn07rfi7nJBDJOG9uKj0IP0MEvLjjor7jI6THaGMGp/CIDNP+XMogB4+KCu9oUTnN7RWSBgYsLTmLssjkfuBg4Fti/tf4eeB94EnjORVAM/Dkct8jUvCOwBbgV2Mfh+wNwB/AI8LeiLdXGtOSn9HiVOgx4Adi0RCw4CSuoZuvr2Xt11M8Dvh0XNCEMbZd8wWFWJwKvAjunRqFdwH9jxqnAJ5P6RzqtYg7vDnwI7JtJ9kvgOCp+n+9kHCHrG55YIVxFhB8FrkgTO5qi9wI3pWHFrcsKrtjEjI/r4rPDqNu06fcXcAjw0zJeGkhvqUzbmoUcdxAeBK4vGRHgNuDOUph6hJcKadC9Yf0I7F342PBBu3YX0awL9t0dEF9KDGByKlq1/2NBocHpoqnIrmAVqN4pHQ+864/LuoWI3JgdtbZEiV1iHFzBugBOBt5w7aeRPgV408UWkqik4IOBryVSI0aRsTjIny4B0ADgNMHzAjZAHKz9iQk8Nl4iTz99RCA5bs9XcM6yap+Eg/4McIHHQPXiClaBWkKXAo+vfU/qGDU2sSY62lR3QcFq54Aq22F9DhzqERT/b3vyYxrbMVY623UU0fe4Wc/lufWm/9nkIAfhq80wezkpto5+Kz+Di1VlQXdwHwBuyBzJbXX/rWkYfrTdORxPpyidhyvYMlq24ylwD3Bzmti+dVi8KDi2WkQlXQbcD+wpkv+mPXzYTclK2lxwMx7dnzn+lkZ3J+DaCq6ewZEjqG8Bdo5+KFqfkij1Itz+Go9wMCuUGT7KzG4sTbTdWlpqfAe8A3y11MOfiknS1wfRrs0yU7rrtyzLfLSEOaysePmEekHyz9vRqKp511uW0jOlzHqrF8XUge7bTxCc6jIyiAqUYjN3MTQOCB7u2tyU9knY+XU/wK5s7WOVOth6UH/WG5Zf2o89ifDP11JSLrwULFrYmfWq+kx8eb3E2PcSzc7Xj7VLllX0ia2sYLt+uR24SH104yfIQNe/9SObJ+q/2lbzC011uArqER6y3LV+QLadikuUJwMaScnKIn6dXer5M3aIN1XwgcBL9dn3CImiMnuV2rZQaI9Yzxpe0PtsdMELLNstvQjs5cHP+U3IYQ8bsGfLm4HPBNulOi7YzxnbRZ3te/cQOqWZRAYl8i8TbdfDP6vOghEecbAL8DZwuAre2K0mvB0OxukMwJY0t6Wk9FPAhS6iYJA/BAOE7cA1yuCqgk9oTzWCnL5JvjzB6T/A0cCnS7YB16rg1+tCdVpmsRV4Z5k8rWSgIvh0qF5bvFA4RkqJ5MptrL5ENyaKYP1CTtGjBFHBCdvcUu/b745loiLYnvl6rxwpMopUbGcs7LBhL8MMF4i2Y+R4uGZhheCjjVldtDETgr8b8Gts4sU8nd2+a6WxWamVILXxf1K7ORrN7NjydWX7ZtxyZ9n3Ckegx6Hzq+0VrGJHBAeTfu2PVgTuKk1bGa/uPnzxkp7E5EbgPlHwwMzOn3bWLdoUwRkOt9X4W8feAPGq9ETBK5KkwS6eScV2WiNYZwL2yW4u166Baxyl80rN2T6dtgD0IpwtdBxAVCWaqUQnXNM20DoP3VIlnW73v4hwOm2/hz+4G5PSSY9R8idzTPbklI6tcykPwf2YjJWfYE1yk2AYYZdBxCASHBfWpSoaOI4aweMvmklehj56fwmSyB+CKQj/AbxGUk56PCf7AAAAAElFTkSuQmCC"
+      />
+    </a>
+    <a href="../index.html">
+      <img
+        id="alt"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA0JJREFUWEelmLFrFUEQxn9rUKIi2gXzD9jExkJExBQ2FiLYaxU7QSxEC5G8QCwUm1Q2WmkviIUWFqKIpEhl4x9gwE5UNAR0fXe3d7c7u7O7D68IL29nZ2e++eabvWeoegxgC5YZGwPGJjwktjRfRY9v133OH1aMtSrpzkgElEnFT1GLb9iu+dEiGx0mERq2iYOVOJaAd64oZ4FPMwCSrI6+v0ydRQxbxrLgGPYVOAFsN9h3oAq0Ckk21nWEFaw0cMTCR+CYyOgzcAr4VkRKJfWwIOis82YeeAucVA7dxLCMZWdW+PMccqwXDT8HvATOR+iGGb8CLgB/1KD8arq9cZeVe/gpcHlsUk8UYqSfgblS1rDRW2XbDxvWLdzp9UKXyiD1dbB3i3xyBvUBGVawPK51LOyuAk9q9hY55JxcBJ4De3qnlb3ZE+AvcAnMi6B8udERrw2wnwHeAPtqgsho8a6Fc8D7HFIZhNrjlwx8sHAo7WTmGfcDON2peRKCcZYlXC8CW8BCSUvyyEWrTs3Ndqr7OoREu2ZUuDM2Nn2dEJFnaKCqearL5rFZFa5pllSS8hqzCSxDqOYyoDmwToWFTIup0rVPQmorwu1ctX8DNW++kaTewHC9LNbeqUVeF3tzYzqIb3hyEmz4ieHg/wekBSFg7ob3dzCHe4JLhG4C9xrN0doydb/RLgXFsAw7WJqx8tAX3FzVJ9NCr86izrGzqCvXpjaN32Td86PDMMG6gIQ0ZBRZVDzCKQhoILiTkjigcH+AUDGIIsFbDwmExo5OIuT5HQNK8jHf44pSrE0hFCUb/WTu1K27BEIBDE22qaflnV8Or46JkgUBZbMskVrjYC+bQxxeGmvTz5PwcjeuDg4VeCfGsqptbkFI88YLKE/qAQ5n1gWkv2g6hITT0V5HSCf4iFDCJtP2GoeCGZctmUKGCh3Ss/kvDslyuP8dQulDMwi1228B95VMfwMH5Jo75heG/cONwJdKw20sD3qqyLlZCui4gdcWc1Tc7nahfQO5pgT7CFiZzsW9Yv1L94Kp/yCR16FhasY9mOzKjIJo9oNWOahihGpOGmx08oVS17/dCueJn9VKJcvPhtrVWDWSV67G7B+MFTI5Z3knbgAAAABJRU5ErkJggg=="
+      />
+    </a>
+    <div>
+      <ul id="ul1">
+        <a href="Monday - non veg.html" class="a2">
+          <button class="btn1">Monday</button>
+        </a>
+        <a href="Tuesday-non veg.html" class="a2">
+          <button class="btn1">Tuesday</button>
+        </a>
+        <a href="Wednesday - Non Veg.html" class="a2">
+          <button class="btn1">Wednesday</button>
+        </a>
+      </ul>
+    </div>
+    <div>
+      <ul id="ul2">
+        <a href="Thursday-non veg.html" class="a3">
+          <button class="btn2">Thursday</button>
+        </a>
+        <a href="Friday - Non Veg.html" class="a3">
+          <button class="btn2">Friday</button>
+        </a>
+        <a href="Saturday-non veg.html" class="a3">
+          <button class="btn2">Saturday</button>
+        </a>
+        <a href="Sunday - Non Veg.html" class="a3">
+          <button class="btn2">Sunday</button>
+        </a>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakfast Alternatives</title>
+    <link rel="stylesheet" href="../CSS/All-Breakfast.css" />
+    <link rel="icon" type="image/x-icon" href="../Images/Logo.png" />
+    <script src="../Javascript/All-Breakfast.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <nav>
+    <a href="../Php/Current-diet.php">
+      <img
+        id="home"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA41JREFUWEedmD1oFUEQx38jNkJEG1FRkWglRGwVIYkKYqn4gYgY7EI6mwimyEthQBsrSWcREZWA1imUaMRSMIgIopBARBBEMZ3g+vZu3n3s7e1usvB49+ZmZ/7zvfuEyBLAKE/+LCCmJDr7m/wBBo9uuz9bVUFejAGGje1t7rKUAlAURFRrVUKYOfQ2DAg6ApMasqmuyo6qtd+T+pxCj2VGEaUYoFvAbeWexjChkks6TAtMKOgaHZTf65KNhAzOAc8U0ByGSwroLPBcn+cgSi891BYvrZWYhw4AXzTl1wQGDCwD/cBX1bIGDGDpQj/GpcuyW5Ve34jJ2MJVlu+cB05rGb4ETikQL11g3lj+fFX5w3mkKHNABWSvP/cAn4Et+nYMmAEs/RPQp5rqdKEvb2AyBsbyJ61AyGrgrLL7KtGG6mAFXI2e82QgPPQ4Ji8gj58EYQmT5YpdewVWNeRLeQ5luzz0LAJ7xVh+f2XljswHQHpjhBmBUd08gmFWwdlwjOrzCPjpArONEVQMpTJt1gNovc2w5Bemuro7jQFVHYt+DwVb/jBgP3Yt6MfqGMaUdIEF9YSfv0gjvy6n7FMGVs6TzukkcmSjG7Ib3WhOCWztJVo1zCmNJAVoRc4fnYn3ejQX0C+Ebc4BqIkjUWvhS+3CLX79DbK9d8AqGqOeuVYQ9jW94iBIBBTvOlmarxjY3/CQ6niDcDwcpgC4RKAO2yLIYC8v3ZA97o6Dy4mWBSK7Lo8+Aq625dAdYLzN0ECfDdjQdgYvpE1n5yb96ZQ9J4EXkVaRT6ve4T8xTFXEzpbB7glisSez2amFj2I41GvzbaZvAIdP1JLAkWqL8Y2O68CDlDyqxr3dgMC1SbiG4aHrvXoIYDPwGjgWB5Xopypb+Wx1nAD+NQE1E2In8L57ELPf+YoWTgBcE9A34DDw0xVu/Vm5m9ZeWw9ZK6zHGpiKLhydLQ35f4GjwLvSzlKaL4eqHhwCnoDsar07R+Nac893xJzH8DZULC3WF1t2gMyBGYp6pchfb/heAReBHyEbcg/Fc3MT8FTgQqOaon0v02D3XjFOAvuApQKyoDuY4voct6FuZPW6XeLwGON06mApjXevQna0tK92T98E7kbTrfj3wynLlr9/bJnay+Fuv+A2NLIK5gzwISU9vGUftcSrO5ryTu/wGxAr+yi21mSKFkoqoA1bH8i/5iRoGqoJ/h9cJzo/whKvXwAAAABJRU5ErkJggg=="
+      />
+    </a>
+    <p>Breakfast Alternatives</p>
+  </nav>
+  <body>
+    <div id="foodSelection">
+      <h2>Select Your Preference</h2>
+      <label for="foodType">Choose:</label>
+      <select id="foodType" onchange="showFoodOptions()">
+        <option value="" disabled selected>
+          Select Vegetarian or Non-Vegetarian
+        </option>
+        <option value="veg">Vegetarian</option>
+        <option value="nonveg">Non-Vegetarian</option>
+      </select>
+
+      <div id="foodDropdown" style="display: none">
+        <label for="foodChoice">Select Your Food:</label>
+        <select id="foodChoice"></select>
+        <button onclick="goToFoodPage()" style="cursor: pointer">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+

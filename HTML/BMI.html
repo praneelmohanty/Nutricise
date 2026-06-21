@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="../CSS/Login-page.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../Images/Logo.png" />
+    <script src="../Javascript/BMI.js" defer></script>
+  </head>
+  <body>
+    <div id="logo-div">
+              <a href="../index.html" style="width: fit-content"
+        ><img src="../Images/Logo-black.png"
+      /></a>
+    </div>
+    <div style="margin-top: 1%" class="form-box">
+      <form action="../Php/BMI.php" method="post">
+        <h2>Calculate Your BMI</h2>
+        <div class="use-pass">
+          <input
+            type="number"
+            step="1"
+            name="weight"
+            id="weight"
+            placeholder="Enter Weight (kg)"
+            style="font-family: Poppins, sans-serif"
+            required
+          />
+        </div>
+        <div class="use-pass">
+          <input
+            type="number"
+            step="0.01"
+            name="height"
+            id="height"
+            placeholder="Enter Height (m)"
+            style="font-family: Poppins, sans-serif"
+            required
+          />
+        </div>
+        <div class="use-pass" id="result"></div>
+        <input type="hidden" id="bmiValue" name="bmi"/>
+        <button
+          type="button"
+          class="btn"
+          style="font-family: Poppins, sans-serif"
+          onclick="calculateBMI()"
+        >
+          Calculate BMI
+        </button>
+        <button
+          type="submit"
+          class="btn"
+          style="font-family: Poppins, sans-serif"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
